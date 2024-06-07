@@ -1,7 +1,7 @@
 <?php require("../parts/globals.php")?>
 <?php  
     // Получение идентификатора пользователя  
-    $organization_id = $_POST['$searched_org_id'];
+    $organization_id = $_POST['organization_id'];
     $user_id = $_SESSION['user_id'];
     
     // Вставка данных в таблицу students для каждого выбранного предмета
@@ -10,11 +10,11 @@
     mysqli_stmt_bind_param($stmt_part, 'ii', $user_id, $organization_id);
     
     if (mysqli_stmt_execute($stmt_part)) {
-        echo "<script>alert('Организация успешно создана');</script>";
+        echo "<script>alert('В организацию успешно добавлен');</script>";
         header("refresh:2, url=../index.php");
         exit();
     } else {
-        echo "<script>alert('Ошибка при добавлении организации');</script>";
+        echo "<script>alert('Ошибка при добавлении в организацию');</script>";
         header("refresh:2, url=../php/add_org_form.php");
         exit();
     }
