@@ -12,7 +12,7 @@
         <ul class="navbar_link navbar_top std-font">
             <li><a href="/">Main</a></li>
             <li><a href="chats_page.php">чат</a></li>
-            <li><a href="login_form.php">Вход</a></li>
+            <li><a href="signin_form.php">Вход</a></li>
         </ul>
     </div>
 <?php endif; ?>
