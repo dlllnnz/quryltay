@@ -31,7 +31,11 @@
     <div class="container">
         <div class="sidebar">
             <?php if ($org_id) { ?>
-                <h2>Chats</h2>
+                <div class="large-font" style="
+                display: flex;
+                justify-content: space-around;
+                text-decoration: none; color: inherit;
+                "><label ><b>Chats</b></label> <a style="text-decoration: none; color: inherit;" href="">+</a></div>
                 <ul class="chats">
                     <?php
                         $chat_query = mysqli_query($conn, "SELECT cp.chat_id AS chat_id, chat_name FROM chatparticipants AS cp JOIN chats ON cp.chat_id = chats.chat_id WHERE user_id = $user_id AND chats.organization_id = $org_id");
@@ -110,36 +114,5 @@
         </div>
         
     </div>
-
-    <?php if ($org_id && $user_role === 'creator') { ?>
-        <div>
-            <h2>Create New Group Chat</h2>
-            <form action="php/create_group_chat.php" method="POST">
-                <input type="hidden" name="org_id" value="<?php echo $org_id; ?>">
-                <input type="text" name="chat_name" placeholder="Chat Name" required>
-                <button type="submit">Create Group Chat</button>
-            </form>
-        </div>
-    <?php } ?>
-
-    <?php if ($org_id) { ?>
-        <div>
-            <h2>Create Private Chat</h2>
-            <form action="php/create_private_chat.php" method="POST">
-                <input type="hidden" name="org_id" value="<?php echo $org_id; ?>">
-                <input type="text" name="chat_name" placeholder="Chat Name" required>
-                <select name="participant_id" required>
-                    <option value="" disabled selected>Select Participant</option>
-                    <?php
-                        $users_query = mysqli_query($conn, "SELECT users.user_id, users.userlogin FROM users JOIN orgparticipants ON users.user_id = orgparticipants.user_id WHERE orgparticipants.organization_id = $org_id AND users.user_id != $user_id");
-                        while ($user = mysqli_fetch_assoc($users_query)) {
-                            echo '<option value="' . htmlspecialchars($user['user_id']) . '">' . htmlspecialchars($user['userlogin']) . '</option>';
-                        }
-                    ?>
-                </select>
-                <button type="submit">Create Private Chat</button>
-            </form>
-        </div>
-    <?php } ?>
 </body>
 </html>
