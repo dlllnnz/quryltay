@@ -48,8 +48,8 @@
     <?php
     ini_set('display_errors', 1);
     error_reporting(E_ALL);
-    require('partials/globals.php');
-    require('partials/header.php');
+    require('parts/globals.php');
+    require('parts/header.php');
 
     $searched_org_id = $_GET['organization_id'] ?? 0;
     $org_query = "SELECT org_name, org_description FROM organizations WHERE organization_id = ?";
