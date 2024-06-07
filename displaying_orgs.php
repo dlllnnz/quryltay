@@ -12,6 +12,7 @@
 
     <?php require('parts/header.php') ?>
 
+    <div class="container">
     <section class="contact-section spad">
     <form action="" method="POST">
         <input type="text" name="searchInput" placeholder="Введите название организации" value="<?php echo isset($_POST['searchInput']) ? $_POST['searchInput'] : ''; ?>">
@@ -48,8 +49,6 @@
     <?php
     ini_set('display_errors', 1);
     error_reporting(E_ALL);
-    require('parts/globals.php');
-    require('parts/header.php');
 
     $searched_org_id = $_GET['organization_id'] ?? 0;
     $org_query = "SELECT org_name, org_description FROM organizations WHERE organization_id = ?";
@@ -76,7 +75,7 @@
 
     ?>
     </section>
-
+    </div>
     <?php require('parts/footer.php') ?>
 </body>
 </html>
