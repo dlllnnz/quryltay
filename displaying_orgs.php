@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 
-<body>
+<body class = 'dark-theme'>
     <?php require('parts/globals.php') ?>
 
     <?php require('parts/header.php') ?>
