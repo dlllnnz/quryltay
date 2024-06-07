@@ -7,9 +7,8 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <?php require("parts/globals.php")?>
-    <?php require("parts/header.php")?>
-
+    <?php require("parts/globals.php");?>
+    <?php require("parts/header.php");?>
 
 </body>
-</html> 
+</html>
