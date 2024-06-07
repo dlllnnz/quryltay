@@ -151,8 +151,8 @@
                     <?php }
                 }
             ?></div>
-            <?php if (isset($_GET['chat_id'])) { ?>
-                <form action="php/send_messages.php?chat_id=<?php echo $_GET['chat_id'];?>" method="POST">
+            <?php if (isset($_GET['chat_id'])) { $get = http_build_query($_GET); ?>
+                <form action="php/send_messages.php?<?php echo $get;?>" method="POST">
             <?php } ?>
                 <div class="chat-input">
                     <textarea name="message" placeholder="Type your message..."></textarea>
