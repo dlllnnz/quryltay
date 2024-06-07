@@ -19,7 +19,7 @@
             <label for="password">Пароль</label>
             <input type="password" id="userpassword" name="userpassword" class="form-input">
 
-            <button type="submit" class="form-button">Зарегистрироваться</button>
+            <button type="submit" class="form-button">Войти</button>
         </form>
     </div>
 </body>
