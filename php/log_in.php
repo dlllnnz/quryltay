@@ -33,7 +33,6 @@
                 // Setting session variables
                 $_SESSION['userID']=$row['userID'];
                 $_SESSION['userlogin']=$row['userlogin'];
-                $_SESSION['userstatus']=$row['userstatus'];
                 header("refresh:2, url=../index.php");
                 exit();
             };

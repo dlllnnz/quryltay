@@ -18,7 +18,8 @@
             $userlogin=$_POST['userlogin'];
             $userpassword=$_POST['userpassword'];
             $useremail=$_POST['useremail'];
-            $userstatus=$_POST['userstatus'];
+            $username=$_POST['username'];
+            $usersurname=$_POST['usersurname'];
             
             // Checking if user login already exists
             $checkuser = mysqli_query($conn,"SELECT * FROM users WHERE userlogin='$userlogin'");
@@ -30,7 +31,7 @@
             }
 
             // Adding new user to the database
-            $adduser = mysqli_query($conn, "INSERT INTO users(userlogin, useremail, userpassword, userstatus) VALUES('$userlogin','$useremail','$userpassword','$userstatus')");
+            $adduser = mysqli_query($conn, "INSERT INTO users(userlogin, useremail, userpassword, username, usersurname) VALUES('$userlogin','$useremail','$userpassword','$username','$usersurname')");
             $checkuser = mysqli_query($conn,"SELECT * FROM users WHERE userlogin='$userlogin'");
             $row = mysqli_fetch_array($checkuser);
             if ($adduser){
@@ -38,7 +39,6 @@
                 // Setting session variables
                 $_SESSION['userID']=$row['userID'];
                 $_SESSION['userlogin']=$row['userlogin'];
-                $_SESSION['userstatus']=$row['userstatus'];
                 header('refresh:2, url=..\index.php');
                 exit();
             }
