@@ -29,17 +29,17 @@
             padding: 10px 0;
             border-bottom: 1px solid #34495e;
         }
-        .chats, .organizations {
+        .chats {
             list-style-type: none;
             padding: 0;
             margin: 0;
         }
-        .chats li, .organizations li {
+        .chats li {
             padding: 15px;
             border-bottom: 1px solid #34495e;
             cursor: pointer;
         }
-        .chats li:hover, .organizations li:hover {
+        .chats li:hover {
             background-color: #34495e;
         }
         .chat-area {
@@ -102,7 +102,7 @@
             }
         }
     ?>
-    <div class="main">
+    <div class="container">
         <div class="sidebar">
             <h2>Organizations</h2>
             <ul class="organizations">

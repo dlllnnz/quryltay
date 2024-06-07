@@ -1,11 +1,17 @@
 @import "navbarstyles.css";
 @import "formsstyles.css";
+@import "chat.css";
 
 body {
     margin: 0;
 }
 * {
     font-family:Arial, Helvetica, sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
 }
 /* Размер шрифта */
 .small-font {
@@ -18,4 +24,10 @@ body {
 
 .large-font {
     font-size: 20px;
+}
+.container{
+    margin-left: 200px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
