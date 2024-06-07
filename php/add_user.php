@@ -26,7 +26,7 @@
             $row = mysqli_fetch_array($checkuser);
             if (!empty($row['userID'])){
                 echo "Error. Login already exists";
-                header('refresh:2, url=../registrationform.php');
+                header('refresh:2, url=../login_form.php');
                 exit();
             }
 
