@@ -16,10 +16,13 @@
     <?php require("parts/globals.php")?>
      <?php require("parts/header.php")?>
     <div class="container">
-        <h1>Добро пожаловать!</h1>
-        <p>Выберите действие:</p>
-        <a href="adding_org_form.php" class="btn">Создать организацию</a>
-        <a href="displaying_orgs.php" class="btn">Вступить в организацию</a>
+        <div style="padding: 10px;">
+            <h1>Добро пожаловать!</h1>
+            <p>Выберите действие:</p>
+            <a href="adding_org_form.php" class="btn">Создать организацию</a>
+            <a href="displaying_orgs.php" class="btn">Вступить в организацию</a>
+        </div>
+        
     </div>
    
 </body>
