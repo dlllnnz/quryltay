@@ -1,0 +1,88 @@
+/* Общие стили для всех навигационных панелей */
+ul.navbar_link {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.navbar_link li {
+    margin: 0;
+    padding: 0;
+}
+
+ul.navbar_link a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: #333;
+}
+
+ul.navbar_link a:hover {
+    background-color: #ddd;
+}
+
+/* Вариант: Верхняя навигационная панель */
+ul.navbar_top {
+    display: flex;
+    justify-content: center;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+ul.navbar_top li {
+    margin: 0 15px;
+}
+
+/* Вариант: Боковая навигационная панель слева */
+ul.navbar_left {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #f8f8f8;
+    border-right: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+ul.navbar_left li {
+    margin: 15px 0;
+}
+
+/* Вариант: Боковая навигационная панель справа */
+ul.navbar_right {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #f8f8f8;
+    border-left: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+ul.navbar_right li {
+    margin: 15px 0;
+}
+
+/* Темная тема */
+body.dark-theme {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-theme ul.navbar_link a {
+    color: #e0e0e0;
+}
+
+body.dark-theme ul.navbar_link a:hover {
+    background-color: #333;
+}
+
+body.dark-theme ul.navbar_top,
+body.dark-theme ul.navbar_left,
+body.dark-theme ul.navbar_right {
+    background-color: #1e1e1e;
+    border-color: #333;
+}
+

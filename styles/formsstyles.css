@@ -1,0 +1,106 @@
+/* Стилизация форм */
+.form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-theme .form-container {
+    background-color: #1e1e1e;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+body.dark-theme .form-container label {
+    color: #e0e0e0;
+}
+
+.form-container .form-input,
+.form-container .form-textarea,
+.form-container .form-select {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #000;
+}
+
+body.dark-theme .form-container .form-input,
+body.dark-theme .form-container .form-textarea,
+body.dark-theme .form-container .form-select {
+    background-color: #333;
+    border: 1px solid #555;
+    color: #e0e0e0;
+}
+
+.form-container .form-input:focus,
+.form-container .form-textarea:focus,
+.form-container .form-select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+body.dark-theme .form-container .form-input:focus,
+body.dark-theme .form-container .form-textarea:focus,
+body.dark-theme .form-container .form-select:focus {
+    border-color: #80bdff;
+}
+
+.form-container .form-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+body.dark-theme .form-button {
+    background-color: #0056b3;
+}
+
+.form-container .form-button:hover {
+    background-color: #0056b3;
+}
+
+body.dark-theme .form-button:hover {
+    background-color: #003f7f;
+}
+
+.form-radio-group,
+.form-checkbox-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.form-radio,
+.form-checkbox {
+    margin-right: 5px;
+}
+
+/* Темная тема */
+body.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.dark-theme {
+    background-color: #121212;
+    color: #e0e0e0;
+}
