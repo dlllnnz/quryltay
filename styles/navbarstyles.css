@@ -36,7 +36,7 @@ ul.navbar_top li {
 /* Вариант: Боковая навигационная панель слева */
 ul.navbar_left {
     position: fixed;
-    left: 0;
+    
     top: 0;
     height: 100%;
     width: 200px;

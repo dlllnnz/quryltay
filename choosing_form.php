@@ -10,16 +10,17 @@
     <!-- Importing Font Awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Добро пожаловать в Quryltay</title>
-    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-<div class="container">
     <?php require("parts/globals.php")?>
-    <?php require("parts/header.php")?>
-    <h1>Добро пожаловать!</h1>
-    <p>Выберите действие:</p>
-    <a href="adding_org_form.php" class="btn">Создать организацию</a>
-    <a href="displaying_orgs.php" class="btn">Вступить в организацию</a>
-</div>
+     <?php require("parts/header.php")?>
+    <div class="container">
+        <h1>Добро пожаловать!</h1>
+        <p>Выберите действие:</p>
+        <a href="adding_org_form.php" class="btn">Создать организацию</a>
+        <a href="displaying_orgs.php" class="btn">Вступить в организацию</a>
+    </div>
+   
 </body>
 </html>

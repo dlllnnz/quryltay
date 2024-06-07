@@ -4,6 +4,10 @@
 * {
     font-family:Arial, Helvetica, sans-serif;
 }
+body {
+    display: flex;
+    flex-direction: row;
+}
 /* Размер шрифта */
 .small-font {
     font-size: 12px;
@@ -15,4 +19,7 @@
 
 .large-font {
     font-size: 20px;
+}
+.container{
+    margin-left: 220px;
 }

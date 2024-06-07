@@ -10,5 +10,6 @@
     <?php require("parts/globals.php")?>
     <?php require("parts/header.php")?>
 
+
 </body>
-</html>
+</html> 
