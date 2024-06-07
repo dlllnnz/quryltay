@@ -8,11 +8,6 @@ body {
 * {
     font-family:Arial, Helvetica, sans-serif;
 }
-body {
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
-}
 /* Размер шрифта */
 .small-font {
     font-size: 12px;

@@ -102,14 +102,14 @@
             }
         }
     ?>
-    <div class="container">
+    <div class="main">
         <div class="sidebar">
             <h2>Organizations</h2>
             <ul class="organizations">
                 <?php
-                    $org_query = mysqli_query($conn, "SELECT o.organization_id, o.org_name FROM organizations AS o JOIN orgparticipants AS op ON o.organization_id = op.organization_id WHERE op.user_id = $user_id");
+                    $org_query = mysqli_query($conn, "SELECT o.organization_id, o.name FROM organizations AS o JOIN orgparticipants AS op ON o.organization_id = op.organization_id WHERE op.user_id = $user_id");
                     while ($org = mysqli_fetch_assoc($org_query)) { ?>
-                        <li><a style="color: white" href="?org_id=<?php echo $org['organization_id'];?>"><?php echo htmlspecialchars($org['org_name']);?></a></li>
+                        <li><a style="color: white" href="?org_id=<?php echo $org['organization_id'];?>"><?php echo htmlspecialchars($org['name']);?></a></li>
                     <?php }
                 ?>
             </ul>
