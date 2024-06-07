@@ -18,7 +18,7 @@
 
             <label for="password">Пароль</label>
             <input type="password" id="userpassword" name="userpassword" class="form-input">
-            <p>Нет акаунта? <a href="login_form.php">Зарегестрироваться</a></p>
+            <p>Нет акаунта? <a href="login_form.php">Зарегистрироваться</a></p>
             <button type="submit" class="form-button">Войти</button>
         </form>
     </div>
