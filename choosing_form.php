@@ -11,6 +11,48 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Добро пожаловать в Quryltay</title>
     <link rel="stylesheet" href="styles/main.css">
+    <style>
+			 body {
+					 font-family: 'Fira Sans', sans-serif;
+					 background-color: #f4f4f9;
+					 margin: 0;
+					 padding: 0;
+			 }
+			 .container {
+					 max-width: 800px;
+					 margin: 50px auto;
+					 padding: 20px;
+					 background-color: #fff;
+					 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+					 border-radius: 8px;
+			 }
+			 h1 {
+					 text-align: center;
+					 color: #333;
+			 }
+			 p {
+					 text-align: center;
+					 color: #666;
+			 }
+			 .btn {
+					 display: block;
+					 width: 80%;
+					 margin: 10px auto;
+					 padding: 15px;
+					 text-align: center;
+					 background-color: #007bff;
+					 color: #fff;
+					 text-decoration: none;
+					 border-radius: 5px;
+					 transition: background-color 0.3s;
+			 }
+			 .btn:hover {
+					 background-color: #0056b3;
+			 }
+			 .btn i {
+					 margin-right: 10px;
+			 }
+	 </style>
 </head>
 <body>
     <?php require("parts/globals.php")?>
